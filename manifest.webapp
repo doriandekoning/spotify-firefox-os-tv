@@ -14,7 +14,11 @@
     "url": "https://github.com/Kingdorian"
   },
   "type": "privileged",
-  "permissions": {},
+  "permissions": {
+    "systemXHR": {
+       "description": "Allows loading remote content"
+     }
+  },
   "installs_allowed_from": [
     "*"
   ],
