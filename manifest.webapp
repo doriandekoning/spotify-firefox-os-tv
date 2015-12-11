@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.1",
   "name": "spotify-firefox-os-tv",
-  "description": "A template with the bare minimum structure",
+  "description": "A simple spotify app for Firefox OS televisions",
   "launch_path": "/index.html",
   "icons": {
     "16": "/img/icons/icon16x16.png",
@@ -10,20 +10,13 @@
     "128": "/img/icons/icon128x128.png"
   },
   "developer": {
-    "name": "Your name",
-    "url": "http://example.com"
+    "name": "Dorian de Koning",
+    "url": "https://github.com/Kingdorian"
   },
   "type": "privileged",
   "permissions": {},
   "installs_allowed_from": [
     "*"
   ],
-  "locales": {
-    "es": {
-      "name": "Aplicación vacía privilegiada",
-      "description": "Una plantilla con la mínima estructura",
-      "permissions": {}
-    }
-  },
   "default_locale": "en"
 }
