@@ -53,6 +53,7 @@ $(document).ready(function(){
         success: function(data){
           if(typeof data.access_token!= 'undefined'){
             clearInterval(interval_poll_accescodes);
+            getUserData(data.access_token);
           }
         }, 
         dataType: "json", 
@@ -60,5 +61,19 @@ $(document).ready(function(){
       });
     }, 1000);
   }});
-
 });
+
+function setUserData(data) {
+  $('body').html("<h1>Welcome " + data.display_name + "</h1>");
+}
+function getUserData(accessToken) {
+  $.ajax({
+    url: 'https://api.spotify.com/v1/me',
+    headers: {
+      'Authorization': 'Bearer ' + accessToken
+    },
+    success: function(result){
+      setUserData(result);
+    }
+  });
+}
